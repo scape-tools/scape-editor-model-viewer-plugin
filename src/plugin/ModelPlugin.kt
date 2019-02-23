@@ -1,10 +1,10 @@
 package plugin
 
-import scape.editor.gui.plugin.Plugin
-import scape.editor.gui.plugin.extension.PluginExtension
+import scape.editor.gui.plugin.IPlugin
+import scape.editor.gui.plugin.PluginDescriptor
 
-@Plugin(name = "Model Viewer", authors = ["Nshusa"])
-class ModelPlugin : PluginExtension() {
+@PluginDescriptor(name = "Model Viewer", authors = ["Nshusa"])
+class ModelPlugin : IPlugin {
 
     override fun applicationIcon(): String {
         return "icons/icon.png"
