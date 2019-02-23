@@ -19,15 +19,12 @@ import scape.editor.fs.RSFileStore
 import scape.editor.fs.graphics.RSModel
 import scape.editor.gui.App
 import scape.editor.gui.controller.BaseController
-import scape.editor.gui.graphics.Triangle
-import scape.editor.gui.graphics.Vertex
 import scape.editor.util.CompressionUtils
 import java.io.File
 import java.net.URL
 import java.util.*
 import java.awt.Color
 import java.awt.image.BufferedImage
-import scape.editor.gui.graphics.Matrix4
 import java.awt.Desktop
 import java.io.ByteArrayInputStream
 import java.io.FileWriter
@@ -37,7 +34,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 import javax.imageio.ImageIO
 
-class ModelController : BaseController() {
+class Controller : BaseController() {
 
     val triangles = mutableListOf<Triangle>()
 
